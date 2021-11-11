@@ -1,7 +1,13 @@
+import Modal from "./Modal";
+import Sidebar from "./Sidebar";
+import Home from "./Home";
+
 function App() {
   return (
     <div className="App">
-     <h1>UseReducer/ Context API and UseContext</h1>
+      <Home />
+      <Modal />
+      <Sidebar />
     </div>
   );
 }
