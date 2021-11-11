@@ -3,7 +3,7 @@ import { social, links } from "./data";
 
 const Sidebar = () => {
   return (
-    <aside className={"sidebar show-sidebar"}>
+    <aside className={"sidebar"}>
       <div className="sidebar-header">
         <button className="btn close-btn">
           <FaTimes />
@@ -22,7 +22,7 @@ const Sidebar = () => {
           );
         })}
       </ul>
-      <ul classname="social-icons">
+      <ul className="social-icons">
         {social.map((link) => {
           const { id, url, icon } = link;
           return (
