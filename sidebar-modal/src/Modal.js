@@ -1,11 +1,17 @@
 import { FaTimes } from "react-icons/fa";
+import { useGlobalContext } from "./context";
 
 const Modal = () => {
+  const { isModalOpen, closeModal } = useGlobalContext();
   return (
-    <div className={"modal-overlay"}>
+    <div
+      className={`${
+        isModalOpen ? "modal-overlay show-modal" : "modal-overlay"
+      }`}
+    >
       <div className="modal-container">
         <h3>Modal Content</h3>
-        <button className="btn close-modal__btn">
+        <button className="btn close-modal__btn" onClick={closeModal}>
           <FaTimes />
         </button>
       </div>
