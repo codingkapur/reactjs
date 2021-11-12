@@ -11,7 +11,7 @@ const Modal = () => {
     >
       <div className="modal-container">
         <h3>Modal Content</h3>
-        <button className="btn close-modal__btn" onClick={closeModal}>
+        <button className="close-btn" onClick={closeModal}>
           <FaTimes />
         </button>
       </div>
